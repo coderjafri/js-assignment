@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>JS Assignment - Mohammad Imran Jafri</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header>
+ <nav>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="excel.html">Excel</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main>
+
+    <h2>Excel Functions</h2>
+ <form id="numForm" name="numform">
+ <label for="numbers">Enter your numbers separated by spaces: </label>
+ <input type="" id="numbers" name="numbers" autocomplete="off" placeholder="Numbers">
+ <br>
+ <br>
+ 
+    <input type="radio" name="usernumber" checked="checked" id="autosum" value="autosum"/>
+    <label for="autosum">Autosum</label><br>
+    <input type="radio" name="usernumber" id="average" value="average"/>
+    <label for="average">Average</label><br>
+    <input type="radio" name="usernumber" id="max" value="max"/>
+    <label for="max">Max</label><br>
+    <input type="radio" name="usernumber" id="min" value="min"/>
+    <label for="min">Min</label><br>
+ <br>
+ <input type="button" value="Calculate" onclick="myExcelFuns();">
+</form>
+<br>
+ <div id="output">
+    Result: <span id="result"></span><br>
+ </div>
+ </main>
+ <footer>
+ <p>Canadian Business College - JavaScript Final Assignment - Mohammad Imran Jafri</p>
+ </footer>
+<!-- [[ code: the script link to your external JavaScript file ]] -->
+</body>
+</html>

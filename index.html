@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>JS Assignment - Mohammad Imran Jafri</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <header>
+ <nav>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="excel.html">Excel</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main>
+ <form id="main-form" name="mainform">
+ <!-- [[ code: the required form elements based on each page instructions ]] -->
+
+    <h2>Membership Form</h2>
+    <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" maxlength="30" autocomplete="off" placeholder="First Name">
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" maxlength="30" autocomplete="off" placeholder="Last Name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" maxlength="30" autocomplete="off" placeholder="Email">
+            <br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" maxlength="30" autocomplete="off" placeholder="Address">
+            <br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" maxlength="30" autocomplete="off" placeholder="City">
+            <br>
+            <label for="province">Province:</label>
+            <input type="text" id="province" name="province" maxlength="30" autocomplete="off" placeholder="Province">
+            <br>
+            <br>
+                Select Membership Type:<br><br>
+                <input type="radio" name="membership" checked="checked" id="premium" value="premium"/>
+                <label for="premium">Premium</label><br>
+                
+                <input type="radio" name="membership" id="standard" value="standard"/>
+                <label for="standard">Standard</label><br>
+                
+                <input type="radio" name="membership" id="basic" value="basic"/>
+                <label for="basic">Basic</label><br>
+    </fieldset>
+    <div>
+        <input type="button" value="Submit" onclick="userForm();">
+        <input type="reset" value="Clear">
+    </div>
+ </form>
+ <div id="output">
+
+ <!-- here is where the user should see the result -->
+
+    <br>
+    Full Name: <span id="user_fullname"></span><br>
+
+    Email: <span id="user_email"></span><br>
+    
+    Address: <span id="user_address"></span> <br>
+    
+    City: <span id="user_city"></span><br>
+    
+    Province: <span id="user_province"></span><br>
+    
+    Membership: <span id="user_membership"></span><br>
+</div>
+
+ </div>
+ </main>
+ <footer>
+ <p>Canadian Business College - JavaScript Final Assignment - Mohammad Imran Jafri</p>
+ </footer>
+<!-- [[ code: the script link to your external JavaScript file ]] -->
+ <script src="js/script.js"></script>
+</body>
+</html>
